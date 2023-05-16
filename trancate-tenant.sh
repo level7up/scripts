@@ -45,9 +45,9 @@ do
     echo -e "${GREEN}Done=> $table${RESET}"
 done
 
-mysql -u$user -p$password -h $host $db -e "UPDATE products SET qty = 0"
+mysql -u$user  -h $host $db -e "UPDATE products SET qty = 0"
 
-echo -e "${GREEN}Done${RESET}"
+echo -e "${RED}Done${RESET}"
 else
     echo -e "${RED}Incorrect password. Exiting the script.${RESET}"
 fi
