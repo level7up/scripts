@@ -369,7 +369,7 @@
 	"comment-divider.mainHeaderAlign": "left",
 	"remoteHub.search.download.enabled": true,
 	"vscodeGoogleTranslate.preferredLanguage": "Arabic",
-	"php-cs-fixer.autoFixByBracket": false,
+	"php-cs-fixer.autoFixByBracket": true,
 	"eslint.run": "onSave",
 	"remoteHub.commitDirectlyWarning": "off",
 	"editor.accessibilitySupport": "off",
@@ -444,9 +444,9 @@
 	"markdown-pdf.executablePath": "chromium",
 	"intelephense.environment.phpVersion": "8.1",
 	"phpformatter.composer": true,
-	"php-cs-fixer.config": "/Users/akhaled/.vscode/php-cs-fixer.php",
+	"php-cs-fixer.config": "/home/level7up/.config/Code/User/php-cs-fixer.php",
 	"editor.unicodeHighlight.invisibleCharacters": false,
-	"workbench.colorTheme": "Natty",
+	"workbench.colorTheme": "Dracula",
 	"[css]": {
 		"editor.defaultFormatter": "vscode.css-language-features"
 	},
@@ -549,9 +549,9 @@
 	"window.zoomLevel": 2,
 	"editor.fontWeight": "100",
 	"diffEditor.codeLens": true,
-	"editor.formatOnPaste": false,
-	"editor.formatOnSave": false,
-	"editor.formatOnType": false,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.formatOnType": true,
 	"terminal.integrated.fontFamily": "monospace",
 	"liveServer.settings.donotVerifyTags": true,
 	"git.openRepositoryInParentFolders": "always",
@@ -571,10 +571,10 @@
 	"namespaceResolver.sortAlphabetically": false,
 	"namespaceResolver.sortNatural": false,
 	"namespaceResolver.sortOnSave": false,
-
-	"cSpell.words": ["Dispatchable", "Queueable"],
 	"i18n-ally.sourceLanguage": "en",
 	"workbench.colorCustomizations": {
+		"editorGroupHeader.tabsBackground": "#000f30",
+		"editorGroupHeader.tabsBorder": "#000000",
 		"editor.lineHighlightBackground": "#1073cf2d",
 		"editor.lineHighlightBorder": "#9fced11f",
 		"editor.background": "#0a142b",
@@ -582,25 +582,24 @@
 		"activityBar.activeBackground": "#1073cf2d",
 		"activityBar.background": "#0a142b",
 		"sideBar.background": "#0a142b",
-		"tab.activeBackground": "#0a142b",
-		"tab.inactiveBackground": "#0e204a",
+		"tab.activeBackground": "#212837",
+		"tab.inactiveBackground": "#000f30",
 		"terminal.background": "#0a142b",
 		"sideBar.dropBackground": "#0e204a",
 		"sideBarSectionHeader.background": "#0e204a",
-		"tab.activeBorder": "#ff0000",
-		"editorGroupHeader.noTabsBackground": "#0e204a",
+		"editorGroupHeader.noTabsBackground": "#0c0e14",
 		"menu.background": "#0e204a",
 		"input.background": "#0e204a",
 		"banner.background": "#1073cf2d",
 		"panel.background": "#1073cf2d",
 		"statusBar.background": "#0e204a",
 		"editorPane.background": "#1073cf2d",
-		"sideBar.foreground": "#d5d5d5",
+		"sideBar.foreground": "#ffffff",
 		"activityBar.foreground": "#056ed7",
 		"activityBar.inactiveForeground": "#056ed7",
 		"commandCenter.border": "#056ed7",
-		"statusBar.foreground": "#056ed7",
-		"statusBarItem.remoteForeground": "#056ed7",
+		"statusBar.foreground": "#868686",
+		"statusBarItem.remoteForeground": "#868686",
 		"titleBar.activeForeground": "#056ed7",
 		"titleBar.inactiveForeground": "#056ed7"
 	},
@@ -659,8 +658,45 @@
 					"foreground": "#5d3e3e",
 					"fontStyle": "italic"
 				}
+			},
+			{
+				"scope": ["keyword.blade"],
+				"settings": {
+					"foreground": "#fe3784"
+				}
+			},
+			{
+				"scope": "entity.name.tag.html",
+				"settings": {
+					"foreground": "#fe3784"
+				}
+			},
+			{
+				"scope": "entity.name.type.class",
+				"settings": {
+					"foreground": "#FF0000"
+				}
 			}
 		]
 	},
-	"peacock.color": "#070000"
+	"highlight.regexes": {
+		"(A|B)": {
+			"decorations": [
+				{
+					"color": "#fe3784"
+				}
+			]
+		}
+	},
+	"peacock.color": "#070000",
+	"cSpell.userWords": [
+		"Dispatchable",
+		"endphp",
+		"endpush",
+		"endsection",
+		"Queueable"
+	],
+	"[php]": {
+		"editor.defaultFormatter": "junstyle.php-cs-fixer"
+	}
 }
