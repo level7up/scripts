@@ -35,7 +35,7 @@ select db in $databases; do
 done
 
 # Tables to truncate
-tables=("sales" "product_sales" "returns" "debit_note_products" "debit_notes" "product_returns" "purchases" "product_purchases" "return_purchases" "purchase_product_return" "product_warehouse" "erp_transactions" "erp_vouchers" "payments")
+tables=("sales" "product_sales" "returns" "debit_note_products" "debit_notes" "product_returns" "purchases" "product_purchases" "return_purchases" "purchase_product_return" "product_warehouse" "erp_transactions" "erp_vouchers" "payments" "expenses")
 
 # Truncate tables
 for table in "${tables[@]}"
